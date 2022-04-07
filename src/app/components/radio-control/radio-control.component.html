@@ -1,0 +1,8 @@
+<div>
+    <div
+        *ngFor="let option of options"
+        (click)="checkOption(option)"
+        [ngClass]="{ 'active': value && option.id === value.id }"
+        class="option"
+    >{{ option.value }}</div>
+</div>

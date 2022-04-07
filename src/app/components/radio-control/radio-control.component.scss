@@ -1,0 +1,27 @@
+.option {
+    position: relative;
+
+    padding-left: 20px;
+    margin-bottom: 4px;
+
+    cursor: pointer;
+
+    &::before {
+        content: '';
+
+        position: absolute;
+        top: 4px;
+        left: 0;
+
+        width: 8px;
+        height: 8px;
+
+        border: 1px solid #000;
+    }
+}
+
+.active {
+    &::before {
+        background-color: gray;
+    }
+}
